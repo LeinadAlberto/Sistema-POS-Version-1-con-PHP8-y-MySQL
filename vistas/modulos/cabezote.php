@@ -3,7 +3,7 @@
     <!--===========================================
         LOGOTIPO
     ============================================-->
-    <a href="" class="logo">
+    <a href="inicio" class="logo">
 
         <!-- Logo Mini -->
         <span class="logo-mini">
