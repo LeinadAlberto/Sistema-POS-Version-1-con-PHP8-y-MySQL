@@ -53,12 +53,14 @@ session_start();
         <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
         <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
         <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
+        <!-- SweetAlert2 -->
+        <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
     </head>
 
     <!--===========================================
         CUERPO DOCUMENTO
     ============================================-->
-    <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
+    <body class="hold-transition skin-blue sidebar-mini login-page"><!-- sidebar-collapse : Para iniciar el sidebar colapsado -->
         
         <?php 
 
@@ -130,6 +132,7 @@ session_start();
         ?>
 
         <script src="vistas/js/plantilla.js"></script>
+        <script src="vistas/js/usuarios.js"></script>
 
     </body>
 

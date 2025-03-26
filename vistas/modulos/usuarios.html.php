@@ -126,6 +126,8 @@
 
 						</tr>
 
+						
+
 					</tbody>
 
 
@@ -142,17 +144,19 @@
 <!--===========================================
 	MODAL AGREGAR USUARIO
 ============================================-->
+
 <div id="modalAgregarUsuario" class="modal fade" role="dialog">
 
 	<div class="modal-dialog">
 
 		<div class="modal-content">
 
-			<form role="form" method="POST" enctype="multipart/form-data">
+			<form role="form" method="post" enctype="multipart/form-data">
 
 				<!--===========================================
 					CABEZA DEL MODAL
 				============================================-->
+				
 				<div class="modal-header bg-primary">
 	
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -164,6 +168,7 @@
 				<!--===========================================
 					CUERPO DEL MODAL
 				============================================-->
+				
 				<div class="modal-body">
 	
 					<div class="box-body">
@@ -235,11 +240,11 @@
 	
 							<div class="panel">SUBIR FOTO</div>
 	
-							<input type="file" class="nuevaFoto" name="nuevaFoto">
+							<input type="file" id="nuevaFoto" name="nuevaFoto">
 	
-							<p class="help-block">Peso máximo de la foto 2 MB</p>
+							<p class="help-block">Peso máximo de la foto 200 MB</p>
 	
-							<img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+							<img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="100px">
 	
 						</div><!-- /.form-group -->
 	
@@ -250,20 +255,14 @@
 				<!--===========================================
 					PIE DEL MODAL
 				============================================-->
+				
 				<div class="modal-footer">
 	
 					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 	
-					<button type="submit" class="btn btn-primary">Guardar usuario</button>
+					<button type="submit" class="btn btn-primary" data-dismiss="modal">Guardar usuario</button>
 	
 				</div><!-- /.modal-footer -->
-
-				<?php 
-				
-					$crearUsuario = new ControladorUsuarios();
-					$crearUsuario->ctrCrearUsuario();
-
-				?>
 
 			</form>
 
